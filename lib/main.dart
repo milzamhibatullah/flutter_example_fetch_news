@@ -5,7 +5,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as client;
 
 Future<News> fetchNews() async {
-  var _apiKey ='d641f36aa8b7450cb3ebe7fbc1e69917';
+  var _apiKey ='sesuaikan dengan api masing2';
   final response = await client.get(
       'https://newsapi.org/v2/top-headlines?country=id&apiKey='+_apiKey);
   if (response.statusCode == 200) {
